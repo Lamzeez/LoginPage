@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="box">
+            <h1>Login Page</h1>
+            <div class="textbox">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="dave" required>
+            </div>
+            <div class="textbox">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="123" required>
+            </div>
+            <div id="loginbtn">
+                <input type="submit" value="Login" onclick="loginbtn()">
+            </div>
+                <input type="reset" value="Reset" onclick="resetbtn()">
+            <script>
+                function loginbtn(){
+                    var user = "dave";
+                    var pass = "123";
+
+                    var typeUsername = document.getElementById("username").value;
+                    var typePassword = document.getElementById("password").value;
+
+                    if(typeUsername==user && typePassword==pass){
+                        location.href = "calculator.html";
+                    } else {
+                        alert("Invalid!");
+                    }
+                }
+                function resetbtn(){
+                    location.href = "index.html";
+                }
+            </script>
+        </div>
+    </body>
+</html>

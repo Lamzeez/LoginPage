@@ -1,0 +1,26 @@
+#box{
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 190px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: pink;
+}
+.textbox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 10px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+#loginbtn{
+    margin-bottom: 10px;
+}
+body{
+    background-color: beige;
+}
